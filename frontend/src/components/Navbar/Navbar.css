@@ -1,0 +1,270 @@
+nav.container {
+  width: 100%;
+  height: 60px;
+  background: rgba(87, 51, 128, 0.18);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Logo styles */
+.logo {
+  width: clamp(80px, 10vw, 100px);
+  height: auto;
+  object-fit: contain;
+}
+
+/* Navigation list styles */
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  cursor: pointer;
+  margin: 0.5rem 1rem;
+  font-size: clamp(14px, 2.5vw, 16px);
+}
+
+nav ul li div,
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+nav ul li div:hover,
+nav ul li a:hover {
+  color: #7a5d5d;
+}
+
+/* Sign In button styles */
+.btn {
+  background: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Notification Bell */
+.notification-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.notification-bell {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding: 0.7rem;
+  transition: background-color 0.3s ease;
+}
+
+.notification-bell:hover {
+  background-color: rgb(104, 50, 125);
+  border-radius: 50%;
+}
+
+.bell-icon {
+  font-size: 1.8rem;
+  color: #fafafa;
+}
+
+.notification-count {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background-color: #ff0000;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Notification Dropdown */
+.notification-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 250px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 1000;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+}
+
+.notification-item {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.notification-item:hover {
+  background-color: #f8f9fa;
+}
+
+.notification-item.no-notifications {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  cursor: default;
+}
+
+.notification-item.unread {
+  background-color: #e6f3ff;
+  font-weight: 500;
+}
+
+.notification-item.read {
+  background-color: #ffffff;
+}
+
+.notification-message {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.notification-time {
+  display: block;
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 0.3rem;
+}
+
+/* Profile Dropdown */
+.profile-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.avatar-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.avatar-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.dropdown-arrow {
+  font-size: 12px;
+  margin-left: 8px;
+  color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #333;
+  border-radius: 8px;
+  min-width: 180px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 10px;
+  z-index: 1000;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 12px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background-color: #444;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(87, 51, 128, 0.95);
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .notification-dropdown {
+    margin: 0.5rem 0;
+  }
+
+  .profile-dropdown {
+    margin: 0.5rem 0;
+  }
+
+  .dropdown-menu {
+    right: 2rem;
+  }
+
+  .notification-dropdown-menu {
+    right: 2rem;
+    width: 90vw;
+    max-width: 300px;
+  }
+}

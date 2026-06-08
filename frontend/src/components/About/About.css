@@ -1,0 +1,50 @@
+.about{
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+.about-left{
+    flex-basis: 40%;
+    position: relative;
+}
+
+.about-right{ 
+    flex-basis: 56%;
+}
+
+.about-img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.play-icon{
+    width: 60px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.about p {
+    color: #333; /* Darker gray for better contrast */
+    font-size: 1.1rem; /* Readable size */
+    line-height: 1.6; /* Improved text flow */
+    margin-bottom: 20px; /* Space between paragraphs */
+    font-weight: 400; /* Regular weight for clarity */
+    font-family: 'Roboto', 'Arial', sans-serif; /* Modern, clean font */
+    transition: color 0.3s ease; /* Smooth color change for interactivity */
+  }
+  
+  /* Remove bottom margin from last paragraph */
+  .about p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Optional: Highlight key phrases on hover (e.g., "Join us") */
+  .about p:hover {
+    color: #5f5cb6; /* Matches navbar's purple-blue theme */
+  }

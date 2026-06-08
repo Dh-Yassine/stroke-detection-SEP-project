@@ -1,0 +1,48 @@
+/* C:\Users\asus\Documents\Projects\frontend\src\components\AdminLayout\AdminLayout.css */
+.admin-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.admin-content {
+  display: flex;
+  flex: 1;
+  margin-top: 60px; /* Navbar height */
+}
+
+.main-content {
+  flex: 1;
+  padding: 1.5rem;
+  margin-left: 260px; /* Sidebar width */
+  transition: margin-left 0.3s ease;
+  background: #f8fafc;
+}
+
+.main-content.sidebar-open {
+  margin-left: 220px; /* Mobile sidebar width */
+}
+
+.backdrop {
+  display: none;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 60px);
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.backdrop.active {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+  }
+  .main-content.sidebar-open {
+    margin-left: 0; /* No margin when sidebar is open on mobile */
+  }
+}

@@ -1,0 +1,435 @@
+/* Enhanced LoginSignup.css */
+.page-container {
+    background: linear-gradient(rgba(67, 54, 153, 0.85), rgba(8, 58, 58, 0.85)), url('../../assets/hero.jpg');
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.loginsignup {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    background: linear-gradient(rgba(67, 54, 153, 0.85), rgba(8, 58, 58, 0.85)), url('../../assets/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    padding: 30px 20px 40px;
+    min-height: 100vh;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.loginsignup::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.loginsignup form {
+    width: 100%;
+    z-index: 2;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.text {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 80px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.underline {
+    width: 80px;
+    height: 6px;
+    background: #ffffff;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.inputs {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    max-width: 480px;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.input:focus-within {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background: #ffffff;
+}
+
+.input img {
+    margin: 0 20px;
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.input:focus-within img {
+    opacity: 1;
+}
+
+.input input {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #333333;
+    font-size: 17px;
+    padding-right: 20px;
+    font-weight: 500;
+}
+
+.input input::placeholder {
+    color: #999999;
+    font-weight: 400;
+}
+
+/* Style for select dropdown */
+.select-input {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #333333;
+    font-size: 17px;
+    padding-right: 40px;
+    padding-left: 10px;
+    font-weight: 500;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+.input select {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23999999' d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z'/%3E%3C/svg%3E") no-repeat right 20px center;
+    background-size: 12px;
+}
+
+.input select option {
+    background: #ffffff;
+    color: #333333;
+    font-size: 16px;
+}
+
+/* Centered forgot password text */
+.forgot-password {
+    text-align: center;
+    width: 100%;
+    margin: 20px auto 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.forgot-password span {
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+.forgot-password span:hover {
+    color: #f0f0f0;
+}
+
+.error-message {
+    position: relative;
+    z-index: 2;
+    margin: 15px auto;
+    padding: 12px 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 87, 87, 0.2);
+    color: #ff5757;
+    border: 1px solid rgba(255, 87, 87, 0.3);
+}
+
+.success-message {
+    margin: 15px auto;
+    padding: 12px 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background-color: rgba(87, 255, 157, 0.2);
+    color: #57ff9d;
+    border: 1px solid rgba(87, 255, 157, 0.3);
+}
+
+/* Submit button above Login/Signup buttons */
+.submit-button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 2rem auto 1rem; /* Use rem for better scaling */
+    padding: 0 1rem; /* Add padding for smaller screens */
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 220px; /* Maintain max width but allow fluidity */
+    height: 55px;
+    color: #fff;
+    background: linear-gradient(135deg, #4F50AD 0%, #6B6CCF 100%); /* Updated gradient based on #4F50AD */
+    border-radius: 15px; /* More rounded corners for updated shape */
+    font-size: 1.125rem; /* 18px in rem for consistency */
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; /* Modern font stack */
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease-in-out; /* Smoother transition */
+    box-shadow: 0 4px 12px rgba(79, 80, 173, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1); /* Updated shadow color */
+    text-transform: uppercase;
+    letter-spacing: 0.05em; /* Slightly tighter spacing */
+    position: relative; /* For pseudo-element effects */
+    overflow: hidden; /* For ripple effect */
+}
+
+/* Ripple effect on click */
+.submit-button::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    pointer-events: none;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.submit-button:active::after {
+    transform: scale(2);
+    opacity: 1;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Hover effect */
+.submit-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(79, 80, 173, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.15); /* Updated shadow color */
+    background: linear-gradient(135deg, #6B6CCF 0%, #8889E0 100%); /* Brighter gradient based on #4F50AD */
+}
+
+/* Active state */
+.submit-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(79, 80, 173, 0.3); /* Updated shadow color */
+}
+
+/* Disabled state */
+.submit-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+    background: #4F50AD; /* Reset to base color */
+}
+
+/* Focus state for accessibility */
+.submit-button:focus-visible {
+    outline: 3px solid rgba(79, 80, 173, 0.5); /* Updated outline color */
+    outline-offset: 2px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .submit-button {
+        max-width: 180px;
+        height: 48px;
+        font-size: 1rem;
+    }
+}
+
+/* High contrast mode for accessibility */
+@media (prefers-contrast: high) {
+    .submit-button {
+        background: #4F50AD; /* Updated base color */
+        border: 2px solid #fff;
+    }
+    .submit-button:hover {
+        background: #6B6CCF; /* Updated hover color */
+    }
+}
+
+/* Login/Signup buttons container */
+.login-signup-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 15px auto 20px;
+    width: 100%;
+    max-width: 480px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    color: #fff;
+    background: #3f1c78;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background: #4a2290;
+}
+
+.submit:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.gray {
+    background: rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+}
+
+.gray:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .loginsignup {
+        padding: 20px 15px 30px;
+        min-height: 550px;
+    }
+    
+    .text {
+        font-size: 36px;
+        margin-top: 60px;
+    }
+    
+    .input {
+        height: 55px;
+    }
+    
+    .input img {
+        margin: 0 15px;
+    }
+    
+    .submit {
+        width: 150px;
+    }
+    
+    .submit-button {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text {
+        font-size: 32px;
+        margin-top: 40px;
+    }
+    
+    .forgot-password {
+        font-size: 14px;
+    }
+    
+    .input {
+        max-width: 100%;
+    }
+    
+    .submit {
+        width: 130px;
+        font-size: 16px;
+    }
+    
+    .submit-button {
+        width: 180px;
+        font-size: 16px;
+    }
+    
+    .login-signup-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .submit {
+        width: 180px;
+    }
+}

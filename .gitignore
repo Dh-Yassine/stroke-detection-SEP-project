@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Node / frontend
+node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.local
+backend/package.json
+backend/package-lock.json
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and debug
+*.log
+backend/debug.log
+
+# Django media and uploads (patient data)
+backend/dicoms/
+backend/mask/
+backend/masks/
+backend/media/
+backend/processed_images/
+
+# ML models (large binaries - see models/README.md)
+*.keras
+models/*.keras
+web_projet/
+
+# DICOM sample / patient data
+*.dcm
+dicom_files/
+
+# OS and IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Database
+*.sqlite3
+db.sqlite3

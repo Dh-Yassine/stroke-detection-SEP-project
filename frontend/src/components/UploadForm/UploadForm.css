@@ -1,0 +1,93 @@
+.upload-form {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  text-align: center;
+  color: #333;
+}
+
+.upload-form h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #3f1c78;
+}
+
+.upload-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #3f1c78;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #3f1c78;
+  background: #fff;
+  color: #333;
+}
+
+.form-group input[type='file'] {
+  padding: 5px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-group small {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.btn {
+  background: #3f1c78;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s;
+  align-self: center;
+}
+
+.btn:hover {
+  background: #5a2ca0;
+}
+
+.btn img {
+  width: 20px;
+}

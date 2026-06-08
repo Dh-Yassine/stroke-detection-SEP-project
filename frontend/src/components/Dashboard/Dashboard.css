@@ -1,0 +1,39 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.stats div {
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.chart {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.specialties ul {
+  list-style: none;
+  padding: 0;
+}
+
+.specialties li {
+  padding: 0.5rem 0;
+}
+
+.error {
+  color: #e53e3e;
+  padding: 1rem;
+  background: #fed7d7;
+  border-radius: 0.5rem;
+}

@@ -1,0 +1,15 @@
+django-cors-headers==4.4.0
+numpy==1.19.5
+nibabel==3.2.1
+tensorflow-cpu==2.5.0
+scipy==1.7.3
+pillow==10.4.0
+matplotlib==3.3.4
+djangorestframework
+djangorestframework-simplejwt
+django
+pydicom
+SimpleITK
+psycopg2-binary
+opencv-python==4.5.5.64
+gunicorn
